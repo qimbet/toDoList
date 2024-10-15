@@ -83,7 +83,7 @@ if not os.path.exists(toDo + ".txt"):
 choiceList = ["Add new task", "Mark a task as finished"]
 
 while(True):
-    print("Welcome! Let's get this shxst cranked out.\n\n")
+    print("Welcome! Let's get these tasks cranked out.\n\n")
     toDoList = readFileList(toDo)
     print("Current list: \n")
     listString(toDoList, "\t\t")
