@@ -85,8 +85,11 @@ choiceList = ["Add new task", "Mark a task as finished"]
 while(True):
     print("Welcome! Let's get these tasks cranked out.\n\n")
     toDoList = readFileList(toDo)
-    print("Current list: \n")
-    listString(toDoList, "\t\t")
+    print("Current list: \n\n")
+    if toDoList == []:
+        print("\t\t ------ You're all caught up! Well done :) ------\n\n")
+    else:
+        listString(toDoList, "\t\t")
     print(linebreak + "\n")
 
     print("Select what you'd like to do:\n")
